@@ -123,7 +123,7 @@ FlashFactory::create(Samba& samba, uint32_t chipId)
     case 0x288b09e0 : // A
     case 0x289b09e0 : // B
     case 0x28ab09e0 : // C
-        flash = new EefcFlash(samba, "ATSAM4S4", 0x400000, 512, 512, 1, 16, 0x20001000, 0x20010000, 0x400e0a00, false);
+        flash = new EefcFlash(samba, "ATSAM4S4", 0x400000, 512, 512, 1, 32, 0x20001000, 0x20010000, 0x400e0a00, false);
         break;
     case 0x288b07e0 : // A
     case 0x289b07e0 : // B
