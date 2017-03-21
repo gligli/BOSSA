@@ -290,7 +290,7 @@ EefcFlash::waitFSR()
     uint32_t fsr0;
     uint32_t fsr1 = 0x1;
 
-    while (++tries <= 500)
+    while (++tries <= 5000)
     {
         fsr0 = _samba.readWord(EEFC0_FSR);
         if (fsr0 & (1 << 2))
@@ -306,7 +306,7 @@ EefcFlash::waitFSR()
             break;
         usleep(100);
     }
-    if (tries > 500)
+    if (tries > 5000)
         throw FlashCmdError();
 }
 
