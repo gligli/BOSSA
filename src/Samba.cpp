@@ -663,6 +663,19 @@ Samba::reset(void)
 
     switch (chipId)
     {
+    case 0x288c0ce0: // ATSAM4S16A
+    case 0x289c0ce0: // ATSAM4S16B
+    case 0x28ac0ce0: // ATSAM4S16C
+    case 0x288c0ae0: // ATSAM4S8A
+    case 0x289c0ae0: // ATSAM4S8B
+    case 0x28ac0ae0: // ATSAM4S8C
+    case 0x288b09e0: // ATSAM4S4A
+    case 0x289b09e0: // ATSAM4S4B
+    case 0x28ab09e0: // ATSAM4S4C
+    case 0x288b07e0: // ATSAM4S2A
+    case 0x289b07e0: // ATSAM4S2B
+    case 0x28ab07e0: // ATSAM4S2C
+
     case 0x10010000:
     case 0x10010005:
     case 0x1001000a:
